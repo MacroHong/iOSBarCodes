@@ -32,19 +32,17 @@ enum {
 
 - (void)viewDidLoad {
     
-    //get the authority of camera
     BOOL cameraIsAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
-//    BOOL cameraIsAvailable = [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront];
 
     
     NSString *mediaType = AVMediaTypeVideo;
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
     
     if (cameraIsAvailable && authStatus != AVAuthorizationStatusRestricted && authStatus != AVAuthorizationStatusDenied) {
-        // camera is available and has the authority
+
         [self initCapture]; // 启动摄像头
     } else {
-        // camera is not availble
+
         [self alertWithTitle:@"温馨提示" msg:@"请在设置中打开摄像头权限" btnTitle:@"确定"];
     }
     
@@ -136,42 +134,6 @@ enum {
         _captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         [self.view.layer addSublayer:_captureVideoPreviewLayer];
         [_captureSession startRunning];
-    } else {
-        // 捕获媒体数据的输出
-        AVCaptureVideoDataOutput *captureOutput = [[AVCaptureVideoDataOutput alloc] init];
-        captureOutput.alwaysDiscardsLateVideoFrames = YES;
-        [captureOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
-        
-        NSString* key = (NSString *)kCVPixelBufferPixelFormatTypeKey;
-        NSNumber* value = [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA];
-        NSDictionary *videoSettings = [NSDictionary dictionaryWithObject:value forKey:key];
-        [captureOutput setVideoSettings:videoSettings];
-        [_captureSession addOutput:captureOutput];
-        
-        NSString* preset = nil;
-        if (NSClassFromString(@"NSOrderedSet") && // Proxy for "is this iOS 5" ...
-            [UIScreen mainScreen].scale > 1 &&
-            [inputDevice
-             supportsAVCaptureSessionPreset:AVCaptureSessionPresetiFrame960x540]) {
-                // NSLog(@"960");
-                preset = AVCaptureSessionPresetiFrame960x540;
-            }
-        if (!preset) {
-            // NSLog(@"MED");
-            preset = AVCaptureSessionPresetMedium;
-        }
-        _captureSession.sessionPreset = preset;
-        
-        if (!_captureVideoPreviewLayer) {
-            _captureVideoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_captureSession];
-        }
-        // NSLog(@"prev %p %@", self.prevLayer, self.prevLayer);
-        _captureVideoPreviewLayer.frame = self.view.bounds;
-        _captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-        [self.view.layer addSublayer: _captureVideoPreviewLayer];
-        
-        [_captureSession startRunning];
-
     }
 }
 

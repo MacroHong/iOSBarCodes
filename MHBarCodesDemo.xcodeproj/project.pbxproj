@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C15BA631BCE78F7007159A6 /* 扫描线.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA601BCE78F7007159A6 /* 扫描线.png */; settings = {ASSET_TAGS = (); }; };
-		6C15BA641BCE78F7007159A6 /* 扫描线@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA611BCE78F7007159A6 /* 扫描线@2x.png */; settings = {ASSET_TAGS = (); }; };
-		6C15BA651BCE78F7007159A6 /* 扫描线@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA621BCE78F7007159A6 /* 扫描线@3x.png */; settings = {ASSET_TAGS = (); }; };
-		6C8F542D1B92315800FDF8AB /* 扫描框.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542A1B92315800FDF8AB /* 扫描框.png */; settings = {ASSET_TAGS = (); }; };
-		6C8F542E1B92315800FDF8AB /* 扫描框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542B1B92315800FDF8AB /* 扫描框@2x.png */; settings = {ASSET_TAGS = (); }; };
-		6C8F542F1B92315800FDF8AB /* 扫描框@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542C1B92315800FDF8AB /* 扫描框@3x.png */; settings = {ASSET_TAGS = (); }; };
-		6CA1933D1B96C5E500D0B15C /* FrostedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1933C1B96C5E500D0B15C /* FrostedView.m */; settings = {ASSET_TAGS = (); }; };
+		6C15BA631BCE78F7007159A6 /* 扫描线.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA601BCE78F7007159A6 /* 扫描线.png */; };
+		6C15BA641BCE78F7007159A6 /* 扫描线@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA611BCE78F7007159A6 /* 扫描线@2x.png */; };
+		6C15BA651BCE78F7007159A6 /* 扫描线@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C15BA621BCE78F7007159A6 /* 扫描线@3x.png */; };
+		6C8F542D1B92315800FDF8AB /* 扫描框.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542A1B92315800FDF8AB /* 扫描框.png */; };
+		6C8F542E1B92315800FDF8AB /* 扫描框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542B1B92315800FDF8AB /* 扫描框@2x.png */; };
+		6C8F542F1B92315800FDF8AB /* 扫描框@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F542C1B92315800FDF8AB /* 扫描框@3x.png */; };
+		6CA1933D1B96C5E500D0B15C /* FrostedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1933C1B96C5E500D0B15C /* FrostedView.m */; };
 		6CA8416B1B920072005D6D5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8416A1B920072005D6D5B /* main.m */; };
 		6CA8416E1B920072005D6D5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8416D1B920072005D6D5B /* AppDelegate.m */; };
 		6CA841711B920072005D6D5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA841701B920072005D6D5B /* ViewController.m */; };
 		6CA841741B920072005D6D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA841721B920072005D6D5B /* Main.storyboard */; };
 		6CA841761B920072005D6D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA841751B920072005D6D5B /* Assets.xcassets */; };
 		6CA841791B920072005D6D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA841771B920072005D6D5B /* LaunchScreen.storyboard */; };
-		6CA841831B9201FF005D6D5B /* MHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA841821B9201FF005D6D5B /* MHScanViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6CA841831B9201FF005D6D5B /* MHScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA841821B9201FF005D6D5B /* MHScanViewController.m */; };
 		6CA841861B921865005D6D5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA841851B921865005D6D5B /* AVFoundation.framework */; };
 		6CA841881B921872005D6D5B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA841871B921872005D6D5B /* CoreMedia.framework */; };
 		6CA8418A1B92187B005D6D5B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA841891B92187B005D6D5B /* CoreVideo.framework */; };
@@ -51,7 +51,7 @@
 		6CA8417A1B920072005D6D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA841811B9201FF005D6D5B /* MHScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHScanViewController.h; sourceTree = "<group>"; };
 		6CA841821B9201FF005D6D5B /* MHScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHScanViewController.m; sourceTree = "<group>"; };
-		6CA841841B920391005D6D5B /* MHDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MHDefine.h; path = MHBarCodesDemo/MHDefine.h; sourceTree = "<group>"; };
+		6CA841841B920391005D6D5B /* MHDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHDefine.h; sourceTree = "<group>"; };
 		6CA841851B921865005D6D5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6CA841871B921872005D6D5B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		6CA841891B92187B005D6D5B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -79,10 +79,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C82E2021BDF704400EDE6D7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				6CA841811B9201FF005D6D5B /* MHScanViewController.h */,
+				6CA841821B9201FF005D6D5B /* MHScanViewController.m */,
+				6CA1933B1B96C5E500D0B15C /* FrostedView.h */,
+				6CA1933C1B96C5E500D0B15C /* FrostedView.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		6C82E2031BDF705900EDE6D7 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				6C15BA601BCE78F7007159A6 /* 扫描线.png */,
+				6C15BA611BCE78F7007159A6 /* 扫描线@2x.png */,
+				6C15BA621BCE78F7007159A6 /* 扫描线@3x.png */,
+				6C8F542A1B92315800FDF8AB /* 扫描框.png */,
+				6C8F542B1B92315800FDF8AB /* 扫描框@2x.png */,
+				6C8F542C1B92315800FDF8AB /* 扫描框@3x.png */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
 		6CA8415D1B920072005D6D5B = {
 			isa = PBXGroup;
 			children = (
-				6CA841841B920391005D6D5B /* MHDefine.h */,
 				6CA841681B920072005D6D5B /* MHBarCodesDemo */,
 				6CA841671B920072005D6D5B /* Products */,
 			);
@@ -99,7 +122,9 @@
 		6CA841681B920072005D6D5B /* MHBarCodesDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6CA841801B9201BA005D6D5B /* BarCodes */,
+				6CA841841B920391005D6D5B /* MHDefine.h */,
+				6C82E2031BDF705900EDE6D7 /* res */,
+				6C82E2021BDF704400EDE6D7 /* libs */,
 				6CA8416C1B920072005D6D5B /* AppDelegate.h */,
 				6CA8416D1B920072005D6D5B /* AppDelegate.m */,
 				6CA8416F1B920072005D6D5B /* ViewController.h */,
@@ -126,23 +151,6 @@
 				6CA8416A1B920072005D6D5B /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6CA841801B9201BA005D6D5B /* BarCodes */ = {
-			isa = PBXGroup;
-			children = (
-				6C15BA601BCE78F7007159A6 /* 扫描线.png */,
-				6C15BA611BCE78F7007159A6 /* 扫描线@2x.png */,
-				6C15BA621BCE78F7007159A6 /* 扫描线@3x.png */,
-				6C8F542A1B92315800FDF8AB /* 扫描框.png */,
-				6C8F542B1B92315800FDF8AB /* 扫描框@2x.png */,
-				6C8F542C1B92315800FDF8AB /* 扫描框@3x.png */,
-				6CA841811B9201FF005D6D5B /* MHScanViewController.h */,
-				6CA841821B9201FF005D6D5B /* MHScanViewController.m */,
-				6CA1933B1B96C5E500D0B15C /* FrostedView.h */,
-				6CA1933C1B96C5E500D0B15C /* FrostedView.m */,
-			);
-			name = BarCodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
