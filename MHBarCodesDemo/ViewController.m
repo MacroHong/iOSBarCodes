@@ -77,6 +77,14 @@ enum {
         ((UILabel *)[self.view viewWithTag:TIPSLBL]).hidden = NO;
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         pasteboard.string = retStr;
+        
+        if ([retStr hasPrefix:@"http://"] || [retStr hasPrefix:@"https://"]) {
+            NSURL* url = [[ NSURL alloc ] initWithString:retStr];
+            [[UIApplication sharedApplication] openURL:url];
+        }
+        
+        
+        
     };
     [self presentViewController:scanVC animated:YES completion:nil];
 }

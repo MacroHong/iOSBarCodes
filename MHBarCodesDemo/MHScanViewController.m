@@ -47,13 +47,13 @@ enum {
     }
     
     
-    CGRect cropRect = CGRectMake(87, 100, 240, 240);
+    CGRect cropRect = CGRectMake((kWidth - 240 ) / 2, (kHeight - 240 ) / 2 - 50, 240, 240);
     
     FrostedView *frostedView = [[FrostedView alloc] initWithTranslucentRect:cropRect];
     [self.view addSubview:frostedView];
     
     UIButton *returnBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    returnBtn.frame = CGRectMake(kCenterX - 40, kCenterY + 50, 80, 25);
+    returnBtn.frame = CGRectMake(kCenterX - 40, (kHeight + 240 ) / 2, 80, 25);
     returnBtn.backgroundColor = [UIColor lightGrayColor];
     [returnBtn setTitle:@"取消扫描" forState:(UIControlStateNormal)];
     [returnBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
@@ -110,7 +110,7 @@ enum {
         [captureOutput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
         
         CGSize size = self.view.bounds.size;
-        CGRect cropRect = CGRectMake(87, 100, 240, 240);
+        CGRect cropRect = CGRectMake((kWidth - 240 ) / 2, (kHeight - 240 ) / 2 - 50, 240, 240);
         CGFloat p1 = size.height/size.width;
         CGFloat p2 = 1920./1080.; //使用了1080p的图像输出
         if (p1 < p2) {
