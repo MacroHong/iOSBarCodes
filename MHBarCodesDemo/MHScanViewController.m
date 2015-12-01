@@ -123,10 +123,17 @@ enum {
             captureOutput.rectOfInterest = CGRectMake(cropRect.origin.y/size.height, (cropRect.origin.x + fixPadding)/fixWidth, cropRect.size.height/size.height, cropRect.size.width/fixWidth);
         }
         
-        
         [_captureSession setSessionPreset:AVCaptureSessionPresetHigh];
         [_captureSession addOutput:captureOutput];
-        captureOutput.metadataObjectTypes = @[AVMetadataObjectTypeQRCode, AVMetadataObjectTypeCode128Code];
+        captureOutput.metadataObjectTypes = @[
+                                              AVMetadataObjectTypeQRCode,
+                                              AVMetadataObjectTypeCode128Code,
+                                              AVMetadataObjectTypeCode39Code,
+                                              AVMetadataObjectTypeEAN13Code,
+                                              AVMetadataObjectTypeCode93Code,
+                                              AVMetadataObjectTypeEAN8Code,
+                                              AVMetadataObjectTypeEAN13Code,
+                                              ];
         if (!_captureVideoPreviewLayer) {
             _captureVideoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_captureSession];
         }
